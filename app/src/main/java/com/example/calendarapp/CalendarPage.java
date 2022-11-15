@@ -11,4 +11,10 @@ public class CalendarPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_page);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setContentView(R.layout.activity_main);
+    }
 }
